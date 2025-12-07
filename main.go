@@ -8,7 +8,7 @@ import (
 func main() {
 	// 1. Define the handler (like a route in Flask)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello from OpenShift! You requested: %s\n", r.URL.Path)
+		fmt.Fprintf(w, "Hello from OpenShift! AUTO v2! You requested: %s\n", r.URL.Path)
 	})
 
 	// 2. Start the server on port 8080
